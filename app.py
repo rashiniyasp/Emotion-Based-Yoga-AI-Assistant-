@@ -11,6 +11,19 @@ separate Streamlit pages under pages/:
 """
 
 import os
+import os
+import sys
+import subprocess
+
+# Streamlit Community Cloud libglib workaround: install headless cv2 to a custom dir
+custom_cv2_dir = os.path.join(os.path.expanduser("~"), ".custom_cv2")
+if not os.path.exists(custom_cv2_dir):
+    os.makedirs(custom_cv2_dir, exist_ok=True)
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--target", custom_cv2_dir, "opencv-python-headless==4.8.0.76", "opencv-contrib-python-headless==4.8.0.76"])
+
+if custom_cv2_dir not in sys.path:
+    sys.path.insert(0, custom_cv2_dir)
+
 import cv2
 
 import streamlit as st
