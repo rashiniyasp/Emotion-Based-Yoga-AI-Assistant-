@@ -105,4 +105,4 @@ See [deploy/README_pi.md](deploy/README_pi.md) for detailed Pi setup instruction
 
 ## 📜 License
 
-M.Tech Thesis Project — For academic use.
+M.Tech Thesis Project — Only For academic use.
