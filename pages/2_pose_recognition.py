@@ -13,17 +13,7 @@ Flow:
 
 import streamlit as st
 import os
-import sys
-import subprocess
-import importlib
-
-try:
-    import cv2
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "uninstall", "-y", "opencv-python", "opencv-contrib-python"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python-headless==4.8.0.76", "opencv-contrib-python-headless==4.8.0.76"])
-    importlib.invalidate_caches()
-    import cv2
+import cv2
 import numpy as np
 import time
 import threading
