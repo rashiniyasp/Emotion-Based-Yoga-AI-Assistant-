@@ -11,9 +11,26 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
           lfs: true
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install huggingface_hub
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/rashi-yoga-correction HEAD:main
+        run: |
+          python -c "
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi()
+          api.upload_folder(
+              folder_path='.',
+              repo_id='rashiniyasp/rashi-yoga-correction',
+              repo_type='space',
+              token=os.environ['HF_TOKEN'],
+              ignore_patterns=['.git/*', '.github/*', 'modules/MAtNODE/yoga16-dataset/*', 'yoga16-dataset/*']
+          )
+          "
