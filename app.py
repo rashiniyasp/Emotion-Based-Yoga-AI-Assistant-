@@ -10,6 +10,16 @@ separate Streamlit pages under pages/:
   3. pages/3_pose_correction.py  → ACORN → Real-time Correction Feedback
 """
 
+import os
+import subprocess
+
+try:
+    import cv2
+except ImportError:
+    subprocess.run(["pip", "uninstall", "-y", "opencv-python", "opencv-contrib-python"], check=False)
+    subprocess.run(["pip", "install", "opencv-python-headless", "opencv-contrib-python-headless"], check=False)
+    import cv2
+
 import streamlit as st
 from ui.components import inject_custom_css
 
