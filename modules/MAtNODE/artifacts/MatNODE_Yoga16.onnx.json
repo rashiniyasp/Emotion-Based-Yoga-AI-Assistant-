@@ -1,0 +1,9 @@
+{
+  "onnx_path": "artifacts\\MatNODE_Yoga16.onnx",
+  "size_bytes": 368504,
+  "opset": 17,
+  "rk4_steps": 8,
+  "max_absolute_error": 7.152557373046875e-07,
+  "verified": true,
+  "note": "ONNX uses fixed-step RK4 because adaptive torchdiffeq is not portable."
+}

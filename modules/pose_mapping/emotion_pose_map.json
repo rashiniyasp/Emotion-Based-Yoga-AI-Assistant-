@@ -1,0 +1,232 @@
+{
+  "Angry": {
+    "valence_arousal": "High Arousal, Negative",
+    "evidence": "Forward folds reduce catecholamines and cortisol (Pascoe et al., 2015); grounding lateral stretches down-regulate SNS hyper-activation (Tyagi & Cohen, 2016); Iyengar prescribes specifically for agitation and irritability (Iyengar, 2001); Khalsa clinical protocols for anger management (Khalsa, 2016).",
+    "poses": [
+      {
+        "english": "Extended Triangle",
+        "sanskrit": "Utthita Trikonasana",
+        "yoga82_key": "extended_triangle_pose"
+      },
+      {
+        "english": "Extended Side Angle",
+        "sanskrit": "Utthita Parsvakonasana",
+        "yoga82_key": "extended_side_angle_pose"
+      },
+      {
+        "english": "Wide Angle Seated Forward Bend",
+        "sanskrit": "Upavistha Konasana",
+        "yoga82_key": "wide_angle_seated_forward_bend_pose"
+      },
+      {
+        "english": "Seated Forward Bend",
+        "sanskrit": "Paschimottanasana",
+        "yoga82_key": "seated_forward_bend_pose"
+      },
+      {
+        "english": "Head to Knee Pose",
+        "sanskrit": "Janu Sirsasana",
+        "yoga82_key": "head_to_knee_pose"
+      },
+      {
+        "english": "Heron Pose",
+        "sanskrit": "Kronacasana",
+        "yoga82_key": "heron_pose"
+      },
+      {
+        "english": "Child Pose",
+        "sanskrit": "Balasana",
+        "yoga82_key": "child_pose"
+      },
+      {
+        "english": "Gate Pose",
+        "sanskrit": "Parighasana",
+        "yoga82_key": "gate_pose"
+      }
+    ]
+  },
+  "Fear": {
+    "valence_arousal": "High Arousal, Negative",
+    "evidence": "27% thalamic GABA increase via yoga postures (Streeter et al., 2010); meta-analysis SMD = -0.53 for anxiety reduction (Cramer et al., 2018); Vagal-GABA theory supports restorative/forward fold class (Streeter et al., 2012); Polyvagal activation via thoracic opening (Porges, 2011); Iyengar and Lasater direct prescriptions for fear/anxiety.",
+    "poses": [
+      {
+        "english": "Child Pose",
+        "sanskrit": "Balasana",
+        "yoga82_key": "child_pose"
+      },
+      {
+        "english": "Corpse Pose",
+        "sanskrit": "Savasana",
+        "yoga82_key": "corpse_pose"
+      },
+      {
+        "english": "Easy Sitting",
+        "sanskrit": "Sukhasana",
+        "yoga82_key": "easy_pose"
+      },
+      {
+        "english": "Cobbler Pose",
+        "sanskrit": "Baddha Konasana",
+        "yoga82_key": "cobbler_pose"
+      },
+      {
+        "english": "Seated Forward Bend",
+        "sanskrit": "Paschimottanasana",
+        "yoga82_key": "seated_forward_bend_pose"
+      },
+      {
+        "english": "Tortoise Pose",
+        "sanskrit": "Kurmasana",
+        "yoga82_key": "tortoise_pose"
+      },
+      {
+        "english": "Downward Dog",
+        "sanskrit": "Adho Mukha Svanasana",
+        "yoga82_key": "downward_facing_dog_pose"
+      },
+      {
+        "english": "Extended Puppy Pose",
+        "sanskrit": "Uttana Shishosana",
+        "yoga82_key": "extended_puppy_pose"
+      }
+    ]
+  },
+  "Happy": {
+    "valence_arousal": "High Arousal, Positive",
+    "evidence": "Consolidation and maintenance of positive affect; embodied open power postures align with valence-arousal model (Russell, 1980); Iyengar prescribes standing and balance sequences for vitality and confidence; Khalsa clinical protocols for energy and motivation (Khalsa, 2016); Ekman positive high-arousal affect category (Ekman, 1992).",
+    "poses": [
+      {
+        "english": "Warrior I",
+        "sanskrit": "Virabhadrasana I",
+        "yoga82_key": "warrior_1_pose"
+      },
+      {
+        "english": "Warrior II",
+        "sanskrit": "Virabhadrasana II",
+        "yoga82_key": "warrior_2_pose"
+      },
+      {
+        "english": "Warrior III",
+        "sanskrit": "Virabhadrasana III",
+        "yoga82_key": "warrior_3_pose"
+      },
+      {
+        "english": "Reverse Warrior",
+        "sanskrit": "Viparita Virabhadrasana",
+        "yoga82_key": "reverse_warrior_pose"
+      },
+      {
+        "english": "Tree Pose",
+        "sanskrit": "Vrksasana",
+        "yoga82_key": "tree_pose"
+      },
+      {
+        "english": "Lord of the Dance",
+        "sanskrit": "Natarajasana",
+        "yoga82_key": "lord_of_the_dance_pose"
+      },
+      {
+        "english": "Boat Pose",
+        "sanskrit": "Navasana",
+        "yoga82_key": "boat_pose"
+      },
+      {
+        "english": "Low Lunge",
+        "sanskrit": "Anjaneyasana",
+        "yoga82_key": "low_lunge_pose"
+      }
+    ]
+  },
+  "Sad": {
+    "valence_arousal": "Low Arousal, Negative",
+    "evidence": "Meta-analysis SMD = -0.69, p < 0.001 for depression across 12 RCTs (Cramer et al., 2013); backbend interventions showed largest effect sizes; thoracic extension reverses collapsed depressive posture (van der Kolk, 2014); cortisol normalisation from below baseline (Pascoe et al., 2015); Iyengar's primary depression prescriptions; Khalsa Harvard clinical protocols for MDD (Khalsa, 2016).",
+    "poses": [
+      {
+        "english": "Cobra Pose",
+        "sanskrit": "Bhujangasana",
+        "yoga82_key": "cobra_pose"
+      },
+      {
+        "english": "Camel Pose",
+        "sanskrit": "Ustrasana",
+        "yoga82_key": "camel_pose"
+      },
+      {
+        "english": "Bow Pose",
+        "sanskrit": "Dhanurasana",
+        "yoga82_key": "bow_pose"
+      },
+      {
+        "english": "Locust Pose",
+        "sanskrit": "Salabhasana",
+        "yoga82_key": "locust_pose"
+      },
+      {
+        "english": "Upward Bow Pose",
+        "sanskrit": "Urdhva Dhanurasana",
+        "yoga82_key": "upward_bow_pose"
+      },
+      {
+        "english": "Fish Pose",
+        "sanskrit": "Matsyasana",
+        "yoga82_key": "fish_pose"
+      },
+      {
+        "english": "Chair Pose",
+        "sanskrit": "Utkatasana",
+        "yoga82_key": "chair_pose"
+      },
+      {
+        "english": "Warrior I",
+        "sanskrit": "Virabhadrasana I",
+        "yoga82_key": "warrior_1_pose"
+      }
+    ]
+  },
+  "Neutral": {
+    "valence_arousal": "Low-Mid Arousal",
+    "evidence": "Foundational sthira-sukham principle: seated poses maintain attentive stillness (Patanjali); GABA and HRV homeostasis maintenance (Streeter et al., 2012; Tyagi & Cohen, 2016); balance poses cultivate focused awareness without excessive ANS activation (Iyengar, 2001); alignment-focused standing poses for grounded calm (Khalsa, 2016).",
+    "poses": [
+      {
+        "english": "Easy Sitting",
+        "sanskrit": "Sukhasana",
+        "yoga82_key": "easy_pose"
+      },
+      {
+        "english": "Staff Pose",
+        "sanskrit": "Dandasana",
+        "yoga82_key": "staff_pose"
+      },
+      {
+        "english": "Cobbler Pose",
+        "sanskrit": "Baddha Konasana",
+        "yoga82_key": "cobbler_pose"
+      },
+      {
+        "english": "Tree Pose",
+        "sanskrit": "Vrksasana",
+        "yoga82_key": "tree_pose"
+      },
+      {
+        "english": "Eagle Pose",
+        "sanskrit": "Garudasana",
+        "yoga82_key": "eagle_pose"
+      },
+      {
+        "english": "Half Moon Pose",
+        "sanskrit": "Ardha Chandrasana",
+        "yoga82_key": "half_moon_pose"
+      },
+      {
+        "english": "Extended Triangle",
+        "sanskrit": "Utthita Trikonasana",
+        "yoga82_key": "extended_triangle_pose"
+      },
+      {
+        "english": "Garland Pose",
+        "sanskrit": "Malasana",
+        "yoga82_key": "garland_pose"
+      }
+    ]
+  }
+}

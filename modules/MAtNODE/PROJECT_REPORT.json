@@ -1,0 +1,60 @@
+{
+  "project": "MatNODE Yoga-82 transfer learning on Yoga-16",
+  "media_pipe_api": "mediapipe.tasks.python.vision.PoseLandmarker",
+  "uses_mediapipe_solutions": false,
+  "source_checkpoint": "MatNODE_Yoga82.pth",
+  "feature_configuration": {
+    "views": 16,
+    "rotation_degrees": [-180.0, 180.0],
+    "rotation_axis": "Y",
+    "feature_size": 212,
+    "coordinates": 99,
+    "angles": 8,
+    "bone_vectors": 105,
+    "visibility_used": false
+  },
+  "yoga16_data": {
+    "train_source": 896,
+    "train_detected": 895,
+    "validation_source": 128,
+    "validation_detected": 128,
+    "test_source": 256,
+    "test_detected": 256,
+    "failed_training_image": "wide-angle_seated_forward_bend_pose/15.jpg"
+  },
+  "training": {
+    "completed_epochs": 32,
+    "early_stopped": true,
+    "selection_metric": "validation_loss",
+    "selected_epoch": 22,
+    "selected_validation_loss": 1.1914459466934204,
+    "selected_validation_accuracy": 0.9296875,
+    "highest_observed_validation_accuracy": 0.9375,
+    "test_used_for_selection": false
+  },
+  "yoga16_test": {
+    "accuracy": 0.9453125,
+    "macro_f1": 0.9444052860626833,
+    "samples": 256,
+    "parameters": 66992,
+    "checkpoint_size_bytes": 282917,
+    "mean_model_inference_ms_cpu": 0.5791503908767481,
+    "mflops_per_sample": 12.105728,
+    "gflops_per_sample": 0.012105728,
+    "full_report": "artifacts/yoga16_test/results.json"
+  },
+  "onnx": {
+    "path": "artifacts/MatNODE_Yoga16.onnx",
+    "size_bytes": 368504,
+    "opset": 17,
+    "rk4_steps": 8,
+    "verified": true,
+    "max_absolute_error": 7.152557373046875e-07
+  },
+  "yoga82_test": {
+    "status": "not_run_test_folder_missing_from_workspace",
+    "checkpoint_profile": "artifacts/yoga82_checkpoint_profile.json",
+    "evaluation_command_documented_in": "README.md"
+  },
+  "labels": "labels_yoga16.json"
+}

@@ -1,0 +1,668 @@
+{
+  "split": "valid",
+  "classes": [
+    "chair_pose",
+    "dolphin_plank_pose",
+    "downward-facing_dog_pose",
+    "fish_pose",
+    "goddess_pose",
+    "locust_pose",
+    "lord_of_the_dance_pose",
+    "low_lunge_pose",
+    "seated_forward_bend_pose",
+    "side_plank_pose",
+    "staff_pose",
+    "tree_pose",
+    "warrior_1_pose",
+    "warrior_2_pose",
+    "warrior_3_pose",
+    "wide-angle_seated_forward_bend_pose"
+  ],
+  "samples": [
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_106.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_106.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_236.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_236.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_237.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_237.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_268.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_268.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_83.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_83.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_88.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_88.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_93.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_93.jpg"
+    },
+    {
+      "cache_file": "valid/chair_pose/Chair_Pose_or_Utkatasana__image_99.npz",
+      "label": 0,
+      "source": "yoga16-dataset\\valid\\chair_pose\\Chair_Pose_or_Utkatasana__image_99.jpg"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/17. Dolphin Plank Pose_original.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\17. Dolphin Plank Pose_original.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/29-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\29-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/30-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\30-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/32-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\32-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/33-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\33-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/34-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\34-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/35-0.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\35-0.png"
+    },
+    {
+      "cache_file": "valid/dolphin_plank_pose/Dolphin_Plank_Pose_or_Makara_Adho_Mukha_Svanasana__image_16.npz",
+      "label": 1,
+      "source": "yoga16-dataset\\valid\\dolphin_plank_pose\\Dolphin_Plank_Pose_or_Makara_Adho_Mukha_Svanasana__image_16.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_101.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_101.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_102.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_102.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_80.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_80.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_90.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_90.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_93.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_93.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_96.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_96.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_97.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_97.jpg"
+    },
+    {
+      "cache_file": "valid/downward-facing_dog_pose/Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_98.npz",
+      "label": 2,
+      "source": "yoga16-dataset\\valid\\downward-facing_dog_pose\\Downward-Facing_Dog_pose_or_Adho_Mukha_Svanasana__image_98.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_114.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_114.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_122.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_122.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_126.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_126.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_127.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_127.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_136.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_136.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_137.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_137.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_140.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_140.jpg"
+    },
+    {
+      "cache_file": "valid/fish_pose/Fish_Pose_or_Matsyasana__image_141.npz",
+      "label": 3,
+      "source": "yoga16-dataset\\valid\\fish_pose\\Fish_Pose_or_Matsyasana__image_141.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/00000096.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\00000096.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/38.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\38.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/39.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\39.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/41.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\41.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/43.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\43.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/53.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\53.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/54.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\54.jpg"
+    },
+    {
+      "cache_file": "valid/goddess_pose/59.npz",
+      "label": 4,
+      "source": "yoga16-dataset\\valid\\goddess_pose\\59.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_55.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_55.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_58.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_58.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_61.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_61.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_63.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_63.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_64.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_64.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_67.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_67.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_74.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_74.jpg"
+    },
+    {
+      "cache_file": "valid/locust_pose/Locust_Pose_or_Salabhasana__image_80.npz",
+      "label": 5,
+      "source": "yoga16-dataset\\valid\\locust_pose\\Locust_Pose_or_Salabhasana__image_80.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_125.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_125.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_126.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_126.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_128.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_128.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_129.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_129.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_130.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_130.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_131.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_131.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_132.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_132.jpg"
+    },
+    {
+      "cache_file": "valid/lord_of_the_dance_pose/Lord_of_the_Dance_Pose_or_Natarajasana__image_303.npz",
+      "label": 6,
+      "source": "yoga16-dataset\\valid\\lord_of_the_dance_pose\\Lord_of_the_Dance_Pose_or_Natarajasana__image_303.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_230.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_230.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_36.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_36.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_37.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_37.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_38.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_38.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_54.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_54.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_55.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_55.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_56.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_56.jpg"
+    },
+    {
+      "cache_file": "valid/low_lunge_pose/Low_Lunge_pose_or_Anjaneyasana__image_57.npz",
+      "label": 7,
+      "source": "yoga16-dataset\\valid\\low_lunge_pose\\Low_Lunge_pose_or_Anjaneyasana__image_57.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_147.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_147.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_150.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_150.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_153.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_153.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_154.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_154.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_165.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_165.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_39.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_39.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_40.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_40.jpg"
+    },
+    {
+      "cache_file": "valid/seated_forward_bend_pose/Seated_Forward_Bend_pose_or_Paschimottanasana__image_44.npz",
+      "label": 8,
+      "source": "yoga16-dataset\\valid\\seated_forward_bend_pose\\Seated_Forward_Bend_pose_or_Paschimottanasana__image_44.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_117.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_117.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_79.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_79.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_80.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_80.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_85.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_85.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_87.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_87.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_88.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_88.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_93.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_93.jpg"
+    },
+    {
+      "cache_file": "valid/side_plank_pose/Side_Plank_Pose_or_Vasisthasana__image_99.npz",
+      "label": 9,
+      "source": "yoga16-dataset\\valid\\side_plank_pose\\Side_Plank_Pose_or_Vasisthasana__image_99.jpg"
+    },
+    {
+      "cache_file": "valid/staff_pose/16-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\16-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/17-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\17-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/20-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\20-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/24-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\24-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/29-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\29-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/33. dandasana-stevebig.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\33. dandasana-stevebig.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/35-0.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\35-0.png"
+    },
+    {
+      "cache_file": "valid/staff_pose/Staff_Pose_or_Dandasana__image_74.npz",
+      "label": 10,
+      "source": "yoga16-dataset\\valid\\staff_pose\\Staff_Pose_or_Dandasana__image_74.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_114.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_114.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_116.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_116.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_126.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_126.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_128.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_128.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_134.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_134.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_137.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_137.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_141.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_141.jpg"
+    },
+    {
+      "cache_file": "valid/tree_pose/Tree_Pose_or_Vrksasana__image_143.npz",
+      "label": 11,
+      "source": "yoga16-dataset\\valid\\tree_pose\\Tree_Pose_or_Vrksasana__image_143.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_101.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_101.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_105.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_105.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_106.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_106.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_113.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_113.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_188.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_188.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_87.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_87.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_90.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_90.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_1_pose/Warrior_I_Pose_or_Virabhadrasana_I__image_91.npz",
+      "label": 12,
+      "source": "yoga16-dataset\\valid\\warrior_1_pose\\Warrior_I_Pose_or_Virabhadrasana_I__image_91.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_265.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_265.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_271.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_271.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_49.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_49.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_50.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_50.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_51.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_51.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_54.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_54.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_66.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_66.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_2_pose/Warrior_II_Pose_or_Virabhadrasana_II__image_67.npz",
+      "label": 13,
+      "source": "yoga16-dataset\\valid\\warrior_2_pose\\Warrior_II_Pose_or_Virabhadrasana_II__image_67.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_36.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_36.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_37.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_37.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_38.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_38.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_44.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_44.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_45.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_45.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_47.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_47.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_50.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_50.jpg"
+    },
+    {
+      "cache_file": "valid/warrior_3_pose/Warrior_III_Pose_or_Virabhadrasana_III__image_51.npz",
+      "label": 14,
+      "source": "yoga16-dataset\\valid\\warrior_3_pose\\Warrior_III_Pose_or_Virabhadrasana_III__image_51.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_114.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_114.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_116.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_116.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_164.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_164.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_64.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_64.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_67.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_67.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_72.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_72.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_75.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_75.jpg"
+    },
+    {
+      "cache_file": "valid/wide-angle_seated_forward_bend_pose/Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_78.npz",
+      "label": 15,
+      "source": "yoga16-dataset\\valid\\wide-angle_seated_forward_bend_pose\\Wide-Angle_Seated_Forward_Bend_pose_or_Upavistha_Konasana__image_78.jpg"
+    }
+  ],
+  "failed": [],
+  "source_count": 128,
+  "detected_count": 128,
+  "feature_spec": "16 views x 212 (99 xyz + 8 angles + 105 bone vectors)",
+  "coordinate_source": "MediaPipe Tasks normalized image landmarks"
+}

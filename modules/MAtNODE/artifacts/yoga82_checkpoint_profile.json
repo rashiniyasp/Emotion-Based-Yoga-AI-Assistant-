@@ -1,0 +1,23 @@
+{
+  "checkpoint": "MatNODE_Yoga82.pth",
+  "status": "checkpoint_profiled_test_dataset_missing",
+  "test_metrics": null,
+  "parameters": 75506,
+  "model_size_bytes": 317257,
+  "random_input_inference_ms": {
+    "mean": 5.9478719951584935,
+    "median": 5.820499995024875,
+    "p95": 7.156809995649382,
+    "device": "cpu",
+    "batch_size": 1
+  },
+  "complexity": {
+    "deployment_rk4_steps": 8,
+    "macs_per_sample": 6061312,
+    "mmacs_per_sample": 6.061312,
+    "flops_per_sample": 12122624,
+    "mflops_per_sample": 12.122624,
+    "gflops_per_sample": 0.012122624
+  },
+  "required_test_layout": "<yoga82-root>/test/<pose_name>/*.npy"
+}

@@ -1,0 +1,154 @@
+{
+  "checkpoint": "artifacts\\MatNODE_Yoga16.pth",
+  "dataset_type": "yoga16",
+  "split": "test",
+  "sample_count": 256,
+  "labels": {
+    "0": "chair_pose",
+    "1": "dolphin_plank_pose",
+    "2": "downward-facing_dog_pose",
+    "3": "fish_pose",
+    "4": "goddess_pose",
+    "5": "locust_pose",
+    "6": "lord_of_the_dance_pose",
+    "7": "low_lunge_pose",
+    "8": "seated_forward_bend_pose",
+    "9": "side_plank_pose",
+    "10": "staff_pose",
+    "11": "tree_pose",
+    "12": "warrior_1_pose",
+    "13": "warrior_2_pose",
+    "14": "warrior_3_pose",
+    "15": "wide-angle_seated_forward_bend_pose"
+  },
+  "accuracy": 0.9453125,
+  "macro_f1": 0.9444052860626833,
+  "model_parameters": 66992,
+  "model_size_bytes": 282917,
+  "inference_time_ms": {
+    "mean_per_sample": 0.5791503908767481,
+    "median_per_sample": 0.5609281251963694,
+    "p95_per_sample": 0.7989781242940808,
+    "device": "cpu",
+    "excludes_mediapipe_preprocessing": true
+  },
+  "complexity": {
+    "deployment_rk4_steps": 8,
+    "macs_per_sample": 6052864,
+    "mmacs_per_sample": 6.052864,
+    "flops_per_sample": 12105728,
+    "mflops_per_sample": 12.105728,
+    "gflops_per_sample": 0.012105728
+  },
+  "classification_report": {
+    "chair_pose": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9375,
+      "f1-score": 0.9090909090909091,
+      "support": 16.0
+    },
+    "dolphin_plank_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "downward-facing_dog_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "fish_pose": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "goddess_pose": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "locust_pose": {
+      "precision": 0.9411764705882353,
+      "recall": 1.0,
+      "f1-score": 0.9696969696969697,
+      "support": 16.0
+    },
+    "lord_of_the_dance_pose": {
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1-score": 0.967741935483871,
+      "support": 16.0
+    },
+    "low_lunge_pose": {
+      "precision": 0.8461538461538461,
+      "recall": 0.6875,
+      "f1-score": 0.7586206896551724,
+      "support": 16.0
+    },
+    "seated_forward_bend_pose": {
+      "precision": 1.0,
+      "recall": 0.9375,
+      "f1-score": 0.967741935483871,
+      "support": 16.0
+    },
+    "side_plank_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "staff_pose": {
+      "precision": 0.7619047619047619,
+      "recall": 1.0,
+      "f1-score": 0.8648648648648649,
+      "support": 16.0
+    },
+    "tree_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "warrior_1_pose": {
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.8,
+      "support": 16.0
+    },
+    "warrior_2_pose": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 16.0
+    },
+    "warrior_3_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "wide-angle_seated_forward_bend_pose": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 16.0
+    },
+    "accuracy": 0.9453125,
+    "macro avg": {
+      "precision": 0.9481927386339151,
+      "recall": 0.9453125,
+      "f1-score": 0.9444052860626833,
+      "support": 256.0
+    },
+    "weighted avg": {
+      "precision": 0.9481927386339151,
+      "recall": 0.9453125,
+      "f1-score": 0.9444052860626833,
+      "support": 256.0
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Emotion-Aware Skeleton-Based Yoga Pose Recognition & Analysis System
+# Install: pip install -r requirements.txt
+
+# ── Core ML ──
+torch>=2.0.0
+torchvision>=0.15.0
+torchdiffeq>=0.2.3
+
+# ── MediaPipe (Tasks API only) ──
+mediapipe>=0.10.9
+
+# ── Computer Vision ──
+opencv-python-headless>=4.8.0
+
+# ── ONNX (optional, for Pi / faster inference) ──
+onnxruntime>=1.16.0
+
+# ── Numerical / Science ──
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ── Web App ──
+streamlit>=1.28.0
+streamlit-webrtc>=0.47.0
+av>=10.0.0
+
+# ── Image Processing ──
+Pillow>=9.5.0
+
+# ── Utilities ──
+pyyaml>=6.0
