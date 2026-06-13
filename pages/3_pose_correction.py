@@ -300,15 +300,10 @@ class PoseCorrectionProcessor(VideoProcessorBase):
                 draw_joints(display, smoothed_pts)
                 draw_feedback_bar(display, "detecting", self.confirmed_pose, self.matnode_conf, [])
 
-            # Check for success condition (holding correct pose for 3 seconds)
+            # If pose is correct, that's an instant success — no hold time needed
             if is_correct:
                 self.status = "correct"
-                if self.correct_start is None:
-                    self.correct_start = now
-                elif now - self.correct_start >= 3.0: # Hold for 3 seconds
-                    self.success = True
-            else:
-                self.correct_start = None
+                self.success = True
 
             # Draw confidence badge
             draw_confidence_badge(display, self.matnode_conf, self.confirmed_pose)

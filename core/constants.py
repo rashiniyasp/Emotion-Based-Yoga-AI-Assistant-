@@ -117,7 +117,7 @@ VISIBILITY_MIN_JOINTS   = 8     # minimum visible joints before recognition
 VISIBILITY_THRESHOLD    = 0.5   # per-joint visibility to count as "visible"
 
 POSE_HOLD_DURATION      = 3.0   # seconds to hold same pose for confirmation
-POSE_CONFIRM_CONFIDENCE = 0.75  # >=75% confidence sustained for confirmation
+POSE_CONFIRM_CONFIDENCE = 0.55  # >=55% confidence sustained for confirmation
 
 # Smoothing
 EMA_ALPHA_JOINTS   = 0.4   # exponential moving average for joint positions
@@ -180,7 +180,7 @@ CONFIDENCE_DROP_THRESHOLD = 0.60  # below 60% → user may have changed pose
 CONFIDENCE_DROP_DURATION  = 3.0   # must sustain for 3 consecutive seconds
 
 # Correction quality
-CORRECTION_THRESH     = 0.05    # mean distance to corrected → "pose correct"
+CORRECTION_THRESH     = 0.15    # mean distance to corrected → "pose correct"
 ANGLE_CHANGE_THRESH   = 5.0     # degrees — only report if |delta| > 5 degrees
 JOINT_MOVE_THRESH     = 0.01    # normalized displacement to count as "moved"
 
