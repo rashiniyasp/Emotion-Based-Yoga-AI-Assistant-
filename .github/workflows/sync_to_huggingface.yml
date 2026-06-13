@@ -22,6 +22,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          git lfs install
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           # Strip massive datasets from the commit before pushing to Hugging Face
