@@ -22,6 +22,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          git lfs install
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           
@@ -33,10 +34,16 @@ jobs:
           rm -rf modules/yoga16-dataset || true
           rm -rf yoga16-dataset || true
           
-          # 3. Add clean files and commit
-          git add .
-          git commit -m "Automated Sync from GitHub Actions (Clean History)"
+          # 3. Tell Git LFS to track all binary files so Hugging Face accepts them
+          echo "*.png filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
+          echo "*.jpg filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
+          echo "*.jpeg filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
+          echo "*.npy filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
           
-          # 4. Force push the clean snapshot to the Space
+          # 4. Add clean files and commit
+          git add .
+          git commit -m "Automated Sync from GitHub Actions (Clean History & LFS Fixed)"
+          
+          # 5. Force push the clean snapshot to the Space
           git remote add space https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/yogaasanas-assistant
           git push --force space hf_deploy:main
