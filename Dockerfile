@@ -5,9 +5,11 @@ WORKDIR /app
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     libgl1 \
+    libgl1-mesa-glx \
+    libgl1-mesa-dri \
+    libegl1-mesa \
+    libgles2-mesa \
     libglib2.0-0 \
-    libgles2 \
-    libegl1 \
     libsm6 \
     libxext6 \
     libxrender-dev \
