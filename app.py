@@ -29,6 +29,22 @@ st.set_page_config(
 )
 inject_custom_css()
 
+# --- EMERGENCY SYSTEM DIAGNOSTICS ---
+st.warning("⚠️ Running System Diagnostics to debug the libEGL error...")
+with st.expander("🛠️ SYSTEM DIAGNOSTICS (Send screenshot to AI)", expanded=True):
+    try:
+        st.text("OS Release:")
+        st.code(subprocess.check_output("cat /etc/os-release", shell=True, text=True))
+        st.text("Installed EGL/GL Packages:")
+        st.code(subprocess.check_output("dpkg -l | grep -i 'egl\\|gl\\|mesa'", shell=True, text=True))
+        st.text("libEGL files in /usr/lib:")
+        st.code(subprocess.check_output("find /usr -name 'libEGL*' 2>/dev/null", shell=True, text=True))
+        st.text("Is Dockerfile used? (Check if /app exists):")
+        st.code(subprocess.check_output("ls -la /app 2>/dev/null || echo 'No /app directory (Streamlit SDK used)'", shell=True, text=True))
+    except Exception as e:
+        st.error(f"Diag failed: {e}")
+# ----------------------------------
+
 # ── Session State Initialization ────────────────────────────
 if "module_stage" not in st.session_state:
     st.session_state.module_stage = 0
