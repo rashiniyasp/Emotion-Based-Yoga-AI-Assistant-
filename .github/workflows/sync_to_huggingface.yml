@@ -28,5 +28,5 @@ jobs:
           # Strip massive datasets from the commit before pushing to Hugging Face
           git rm -r --cached modules/MAtNODE/yoga16-dataset yoga16-dataset || true
           git commit --amend -m "Clean commit for Hugging Face push" || true
-          git remote add space https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/rashi-yoga-correction
+          git remote add space https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/yogaasanas-assistant
           git push --force space main
