@@ -12,11 +12,11 @@ Flow:
 """
 
 import streamlit as st
-import os
-import os
-import sys
+import queue
+import time
 import subprocess
 
+import av
 import cv2
 import numpy as np
 import time
@@ -65,9 +65,30 @@ if "matnode_engine" not in st.session_state:
     with st.spinner("Loading Yoga Pose Recognition model..."):
         st.session_state.matnode_engine = MAtNODEEngine()
 
+# --- EMERGENCY SYSTEM DIAGNOSTICS ---
+st.warning("⚠️ Running System Diagnostics to debug the libEGL error...")
+with st.expander("🛠️ SYSTEM DIAGNOSTICS (Send screenshot to AI)"):
+    try:
+        st.text("OS Release:")
+        st.code(subprocess.check_output("cat /etc/os-release", shell=True, text=True))
+        st.text("Installed EGL/GL Packages:")
+        st.code(subprocess.check_output("dpkg -l | grep -i 'egl\\|gl\\|mesa'", shell=True, text=True))
+        st.text("libEGL files in /usr/lib:")
+        st.code(subprocess.check_output("find /usr -name 'libEGL*' 2>/dev/null", shell=True, text=True))
+        st.text("Is Dockerfile used? (Check if /app exists):")
+        st.code(subprocess.check_output("ls -la /app 2>/dev/null || echo 'No /app directory (Streamlit SDK used)'", shell=True, text=True))
+    except Exception as e:
+        st.error(f"Diag failed: {e}")
+# ----------------------------------
+
+# 4. Initialize Pose Detector
 if "pose_detector_m2" not in st.session_state:
-    with st.spinner("Initializing pose detection..."):
-        st.session_state.pose_detector_m2 = PoseDetector()
+    try:
+        with st.spinner("Initializing pose detection..."):
+            st.session_state.pose_detector_m2 = PoseDetector()
+    except Exception as e:
+        st.error(f"FATAL CRASH: {e}")
+        st.stop()
 
 if "prob_smoother" not in st.session_state:
     st.session_state.prob_smoother = ProbabilitySmoother()
