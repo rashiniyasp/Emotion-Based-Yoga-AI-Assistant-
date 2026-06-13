@@ -68,14 +68,7 @@ st.set_page_config(
 )
 inject_custom_css()
 
-RTC_CONFIG = RTCConfiguration(
-    {
-        "iceServers": [
-            {"urls": ["stun:stun.l.google.com:19302"]},
-            {"urls": ["turn:openrelay.metered.ca:80"], "username": "openrelayproject", "credential": "openrelayproject"}
-        ]
-    }
-)
+from core.webrtc_config import get_rtc_config
 
 # ── Session State ────────────────────────────────────────────
 if "acorn_engine" not in st.session_state:
@@ -325,7 +318,7 @@ class PoseCorrectionProcessor(VideoProcessorBase):
 ctx = webrtc_streamer(
     key="pose-correction",
     mode=WebRtcMode.SENDRECV,
-    rtc_configuration=RTC_CONFIG,
+    rtc_configuration=get_rtc_config(),
     video_processor_factory=PoseCorrectionProcessor,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,

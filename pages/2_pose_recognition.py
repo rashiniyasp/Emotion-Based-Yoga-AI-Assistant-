@@ -58,14 +58,7 @@ st.set_page_config(
 )
 inject_custom_css()
 
-RTC_CONFIG = RTCConfiguration(
-    {
-        "iceServers": [
-            {"urls": ["stun:stun.l.google.com:19302"]},
-            {"urls": ["turn:openrelay.metered.ca:80"], "username": "openrelayproject", "credential": "openrelayproject"}
-        ]
-    }
-)
+from core.webrtc_config import get_rtc_config
 
 # ── Session State ────────────────────────────────────────────
 if "matnode_engine" not in st.session_state:
@@ -274,7 +267,7 @@ class PoseRecognitionProcessor(VideoProcessorBase):
 ctx = webrtc_streamer(
     key="pose-recognition",
     mode=WebRtcMode.SENDRECV,
-    rtc_configuration=RTC_CONFIG,
+    rtc_configuration=get_rtc_config(),
     video_processor_factory=PoseRecognitionProcessor,
     media_stream_constraints={"video": True, "audio": False},
     async_processing=True,
