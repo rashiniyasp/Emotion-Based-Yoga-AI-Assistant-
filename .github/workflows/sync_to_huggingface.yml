@@ -22,19 +22,21 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git lfs install
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           
-          # Remove large dataset directories completely
-          git rm -r --cached modules/MAtNODE/yoga16-dataset yoga16-dataset || true
-          git rm -r --cached modules/yoga16-dataset || true
+          # 1. Create a fresh branch with ZERO history to completely bypass HF size limits
+          git checkout --orphan hf_deploy
           
-          # Create .gitignore to prevent future commits of these datasets
-          echo "modules/yoga16-dataset/" >> .gitignore
-          echo "modules/MAtNODE/yoga16-dataset/" >> .gitignore
-          git add .gitignore
+          # 2. Physically delete the massive datasets so they never reach Hugging Face
+          rm -rf modules/MAtNODE/yoga16-dataset || true
+          rm -rf modules/yoga16-dataset || true
+          rm -rf yoga16-dataset || true
           
-          git commit --amend -m "Clean commit for Hugging Face push" || true
+          # 3. Add clean files and commit
+          git add .
+          git commit -m "Automated Sync from GitHub Actions (Clean History)"
+          
+          # 4. Force push the clean snapshot to the Space
           git remote add space https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/yogaasanas-assistant
-          git push --force space main
+          git push --force space hf_deploy:main
