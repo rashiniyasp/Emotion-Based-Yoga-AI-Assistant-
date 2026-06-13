@@ -12,13 +12,16 @@ RUN apt-get update && apt-get install -y \
     libxext6 \
     libxrender-dev \
     libegl1 \
+    libegl-mesa0 \
     libgles2 \
-    libegl1-mesa-dev \
-    libgles2-mesa-dev \
     mesa-utils \
     build-essential \
     && rm -rf /var/lib/apt/lists/* \
     && ldconfig
+
+# Force software EGL rendering (no real GPU needed on HF Spaces free tier)
+ENV LIBGL_ALWAYS_SOFTWARE=1
+ENV MESA_GL_VERSION_OVERRIDE=3.3
 
 # Copy requirements and install
 COPY requirements.txt .
