@@ -277,40 +277,45 @@ status_placeholder = st.empty()
 
 if ctx.state.playing and ctx.video_processor:
     processor = ctx.video_processor
-    with processor.lock:
-        current_status = processor.status
-        current_pose = processor.pose
-        current_conf = processor.conf
-        is_confirmed = processor.confirmed
-        confirmed_name = processor.confirmed_name
+    
+    # Use a while loop to update the placeholder without reloading the whole page!
+    while ctx.state.playing:
+        with processor.lock:
+            current_status = processor.status
+            current_pose = processor.pose
+            current_conf = processor.conf
+            is_confirmed = processor.confirmed
+            confirmed_name = processor.confirmed_name
 
-    if current_pose:
-        display_name = ACORN_CLASS_DISPLAY.get(current_pose, get_pose_display_name(current_pose))
-        status_placeholder.info(
-            f"**Status**: {current_status.upper()} | "
-            f"**Pose**: {display_name} | "
-            f"**Confidence**: {current_conf * 100:.0f}%"
-        )
-    else:
-        status_placeholder.info(f"**Status**: {current_status.upper()}")
-
-    if is_confirmed:
-        st.session_state.pose_confirmed = True
-        st.session_state.confirmed_pose_name = confirmed_name
-        
-        if confirmed_name in recommended_keys:
-            st.balloons()
-            st.rerun()
-        else:
-            display_name = ACORN_CLASS_DISPLAY.get(confirmed_name, get_pose_display_name(confirmed_name))
-            st.warning(
-                f"**{display_name}** isn't one of the suggested poses. "
-                "You can still proceed, or try one of the recommended poses."
+        if current_pose:
+            display_name = ACORN_CLASS_DISPLAY.get(current_pose, get_pose_display_name(current_pose))
+            status_placeholder.info(
+                f"**Status**: {current_status.upper()} | "
+                f"**Pose**: {display_name} | "
+                f"**Confidence**: {current_conf * 100:.0f}%"
             )
-            st.rerun()
-    else:
-        # Use a fragment/periodic rerun pattern
+        else:
+            status_placeholder.info(f"**Status**: {current_status.upper()}")
+
+        if is_confirmed:
+            st.session_state.pose_confirmed = True
+            st.session_state.confirmed_pose_name = confirmed_name
+            
+            if confirmed_name in recommended_keys:
+                st.balloons()
+                time.sleep(1)
+                st.rerun()
+            else:
+                display_name = ACORN_CLASS_DISPLAY.get(confirmed_name, get_pose_display_name(confirmed_name))
+                st.warning(
+                    f"**{display_name}** isn't one of the suggested poses. "
+                    "You can still proceed, or try one of the recommended poses."
+                )
+                time.sleep(2)
+                st.rerun()
+            break
+            
         time.sleep(0.5)
-        st.rerun()
+
 elif not ctx.state.playing:
     status_placeholder.info("Start the camera to begin pose recognition.")

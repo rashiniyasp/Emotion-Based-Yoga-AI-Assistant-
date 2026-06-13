@@ -329,41 +329,29 @@ feedback_placeholder = st.empty()
 
 if ctx.state.playing and ctx.video_processor:
     processor = ctx.video_processor
-    with processor.lock:
-        status = processor.status
-        conf = processor.matnode_conf
-        fb = processor.feedback_lines[:] if processor.feedback_lines else []
-        is_success = processor.success
+    
+    # Localized while loop prevents the entire page from vibrating/reloading
+    while ctx.state.playing:
+        with processor.lock:
+            status = processor.status
+            conf = processor.matnode_conf
+            fb = processor.feedback_lines[:] if processor.feedback_lines else []
+            is_success = processor.success
 
-    if is_success:
-        if not st.session_state.get("balloons_shown", False):
-            st.balloons()
-            st.session_state.balloons_shown = True
-        status_placeholder.success(f"🎉 **Well done!** **{display_name}** is correct. You can turn off the camera manually.")
-    else:
-        status_emoji = {
-            "detecting": "🔍",
-            "correcting": "⚙️",
-            "displaying": "📐",
-            "correct": "✅",
-        }
-        emoji = status_emoji.get(status, "🔍")
-        status_placeholder.info(
-            f"{emoji} **{status.upper()}** | "
-            f"**Pose**: {display_name} | "
-            f"**Confidence**: {conf * 100:.0f}%"
-        )
+        if is_success:
+            if not st.session_state.get("balloons_shown", False):
+                st.balloons()
+                st.session_state.balloons_shown = True
+            feedback_placeholder.markdown(
+                "**Correction Feedback:**\n" +
+                "\n".join(f"- {line}" for line in fb)
+            )
+            # Break out so the user can interact with other buttons if they want
+            break
+        else:
+            feedback_placeholder.empty()
 
-    if fb and status == "displaying":
-        feedback_placeholder.markdown(
-            "**Correction Feedback:**\n" +
-            "\n".join(f"- {line}" for line in fb)
-        )
-    else:
-        feedback_placeholder.empty()
-
-    time.sleep(0.5)
-    st.rerun()
+        time.sleep(0.5)
 elif not ctx.state.playing:
     status_placeholder.info("Start the camera to begin pose correction.")
 
