@@ -41,8 +41,11 @@ jobs:
           echo "*.npy filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
           
           # 4. Add clean files and commit
+          # We MUST clear the git cache first so that the newly added .gitattributes actually applies to the files!
+          git rm -rf --cached .
           git add .
-          git commit -m "Automated Sync from GitHub Actions (Clean History & LFS Fixed)"
+          
+          git commit -m "Automated Sync from GitHub Actions (LFS Cache Fixed)"
           
           # 5. Force push the clean snapshot to the Space
           git remote add space https://rashiniyasp:$HF_TOKEN@huggingface.co/spaces/rashiniyasp/yogaasanas-assistant
