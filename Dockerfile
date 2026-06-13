@@ -3,7 +3,7 @@ FROM python:3.10
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     libgl1 \
     libgl1-mesa-glx \
     libgl1-mesa-dri \
@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
     libegl1 \
     libegl-mesa0 \
     libgles2 \
+    libgbm1 \
+    libdrm2 \
     mesa-utils \
     build-essential \
     && rm -rf /var/lib/apt/lists/* \
@@ -22,6 +24,7 @@ RUN apt-get update && apt-get install -y \
 # Force software EGL rendering (no real GPU needed on HF Spaces free tier)
 ENV LIBGL_ALWAYS_SOFTWARE=1
 ENV MESA_GL_VERSION_OVERRIDE=3.3
+ENV PYOPENGL_PLATFORM=osmesa
 
 # Copy requirements and install
 COPY requirements.txt .
