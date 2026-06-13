@@ -1,2 +1,9 @@
 libgl1
 libglib2.0-0
+libegl1
+libegl1-mesa
+libgles2
+mesa-utils
+libsm6
+libxrender1
+libxext6
