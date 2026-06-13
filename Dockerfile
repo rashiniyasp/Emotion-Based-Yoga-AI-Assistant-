@@ -7,14 +7,18 @@ RUN apt-get update && apt-get install -y \
     libgl1 \
     libgl1-mesa-glx \
     libgl1-mesa-dri \
-    libegl1-mesa \
-    libgles2-mesa \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
     libxrender-dev \
+    libegl1 \
+    libgles2 \
+    libegl1-mesa-dev \
+    libgles2-mesa-dev \
+    mesa-utils \
     build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && ldconfig
 
 # Copy requirements and install
 COPY requirements.txt .
