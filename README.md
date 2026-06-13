@@ -1,3 +1,12 @@
+---
+title: Rashi Yoga Correction
+emoji: 🧘
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # 🧘 Emotion-Aware Skeleton-Based Yoga Pose Recognition & Analysis System
 
 An intelligent, real-time yoga assistance system that combines **Facial Emotion Recognition (FER)**, **skeleton-based yoga pose recognition (Yoga-MAtNODE)**, and **training-free pose correction (ACORN)** into a unified pipeline.
