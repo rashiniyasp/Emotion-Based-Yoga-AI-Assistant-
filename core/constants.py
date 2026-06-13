@@ -180,7 +180,7 @@ CONFIDENCE_DROP_THRESHOLD = 0.60  # below 60% → user may have changed pose
 CONFIDENCE_DROP_DURATION  = 3.0   # must sustain for 3 consecutive seconds
 
 # Correction quality
-CORRECTION_THRESH     = 0.15    # mean distance to corrected → "pose correct"
+CORRECTION_THRESH     = 0.10    # mean distance to corrected → "pose correct"
 ANGLE_CHANGE_THRESH   = 5.0     # degrees — only report if |delta| > 5 degrees
 JOINT_MOVE_THRESH     = 0.01    # normalized displacement to count as "moved"
 
