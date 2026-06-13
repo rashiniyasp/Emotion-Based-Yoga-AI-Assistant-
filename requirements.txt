@@ -7,7 +7,7 @@ torchvision>=0.15.0
 torchdiffeq>=0.2.3
 
 # ── MediaPipe (Tasks API only) ──
-mediapipe>=0.10.9
+mediapipe==0.10.9
 
 # ── Computer Vision ──
 opencv-python-headless>=4.8.0

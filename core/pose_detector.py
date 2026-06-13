@@ -52,7 +52,10 @@ class PoseDetector:
             if running_mode == "VIDEO"
             else mp_vision.RunningMode.IMAGE
         )
-        base_options = mp_python.BaseOptions(model_asset_path=str(model_path))
+        base_options = mp_python.BaseOptions(
+            model_asset_path=str(model_path),
+            delegate=mp_python.BaseOptions.Delegate.CPU
+        )
         options = mp_vision.PoseLandmarkerOptions(
             base_options=base_options,
             running_mode=mode,
