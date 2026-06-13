@@ -10,6 +10,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
+import os
+os.environ["LIBGL_ALWAYS_SOFTWARE"] = "1"
+
 import cv2
 import mediapipe as mp
 import numpy as np
